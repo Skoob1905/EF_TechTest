@@ -22,7 +22,7 @@ npx ts-node src/api/express.ts
 
 ## Tests
 
-Feel free to run the tests as shown written in the _src/api/express.test.ts_ file by running
+In a separate terminal, feel free to run the tests as shown written in the _src/api/express.test.ts_ file by running
 
 ```
 yarn jest
@@ -38,11 +38,12 @@ For each solution run its corresponding solution using
 |step|filename|
 |-|-|
 |1|getPrograms.ts|
-|2|addPrograms.ts
+|2|addPrograms.ts|
 |4|deletePrograms.ts|
 |5|updatePrograms.ts|
 
 ```
+cd src
 ts-node <filename>
 ```
 
