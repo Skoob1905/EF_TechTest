@@ -1,38 +1,50 @@
-# EF Digital Software Engineer Test
+# Solution
 
-## Instructions:
+## Prerequisites
 
-Hult/EF specialize in delivering immersive learning programs focused on the most critical global business skills for all levels of employees. Programs are run on a short period and new ones come and go frequently, to help with the maintenance of this, the marketing team would like an admin dashboard to manage program content. As the backend developer on this project you are expected to create an API that will faciliate CRUD requests from the new UI.
+Make sure you have yarn, node and npx installed.
 
-Spending no longer than 4 hours on the test, use the examples provided in the **"example-programs.json"** folder to build an API. Should look to complete me the work in the following priority order:
-1. Ability to query all programs and return a list
-2. Ability to add a program to the list
-3. Unit tests for each API created
-4. Ability to delete a program from the list
-5. Ability to update a given program
+## To Run Express Server
 
-On completion of the test:
-- Compress code and send back to interviewer via email
+In order to run the server, first install packages from the _package.json_
 
-### Considerations
+```
+git clone https://github.com/Skoob1905/EF_TechTest.git
+cd EFTechTest
+yarn
+```
 
-- This new dashboard should only be visible to marketing managers and administrators
+Now run the server by using
 
-## Requirements
+```
+npx ts-node src/api/express.ts
+```
 
-The only two requirements of this work is thats its written in TypeScript and comes with instructions on how to deploy locally.
+## Tests
 
-## Examples
+Feel free to run the tests as shown written in the _src/api/express.test.ts_ file by running
 
-Some example stacks provided below on how to go about this test:
+```
+yarn jest
+```
 
-- Using express js server with dynamodb local (https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
-- Using localstack and serverless framework (https://docs.localstack.cloud/user-guide/integrations/serverless-framework/)
+## Endpoints
 
+I also wrote some middleware to hit the api and get a response for each of the 4 endpoints created.
 
-### References
-- Express JS: https://docs.localstack.cloud/user-guide/integrations/serverless-framework/
-- Localstack: https://github.com/localstack/localstack
-- Serverless: https://serverless.com
-- Localstack Serverless Plugin: https://github.com/localstack/serverless-localstack
-- AWS CLI: https://docs.aws.amazon.com/cli/latest/reference/
+Each solution (except the test in step 3.) can be found inside the _src_ folder
+
+Step 1.
+For each solution run its corresponding solution using
+|step|filename|
+|-|-|
+|1|getPrograms.ts|
+|2|addPrograms.ts
+|4|deletePrograms.ts|
+|5|updatePrograms.ts|
+
+```
+ts-node <filename>
+```
+
+The console with show the output for each file/endpoint hit.
