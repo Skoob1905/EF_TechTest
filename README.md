@@ -10,7 +10,7 @@ In order to run the server, first install packages from the _package.json_
 
 ```
 git clone https://github.com/Skoob1905/EF_TechTest.git
-cd EFTechTest
+cd EF_TechTest
 yarn
 ```
 
@@ -34,7 +34,6 @@ I also wrote some middleware to hit the api and get a response for each of the 4
 
 Each solution (except the test in step 3.) can be found inside the _src_ folder
 
-Step 1.
 For each solution run its corresponding solution using
 |step|filename|
 |-|-|
